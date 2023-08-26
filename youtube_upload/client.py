@@ -180,6 +180,7 @@ class YoutubeUploader():
             },
             'status': {
                 'privacyStatus': options.get('privacyStatus', VALID_PRIVACY_STATUSES[0]),
+                'publishAt': options.get('publishAt', False),
                 'selfDeclaredMadeForKids': options.get('kids', False)
             }
         }
@@ -252,6 +253,7 @@ class YoutubeUploader():
             },
             'status': {
                 'privacyStatus': options.get('privacyStatus', VALID_PRIVACY_STATUSES[0]),
+                'publishAt': options.get('publishAt', False),
                 'selfDeclaredMadeForKids': options.get('kids', False)
             }
         }
