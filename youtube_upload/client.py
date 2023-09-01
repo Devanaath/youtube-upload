@@ -120,7 +120,6 @@ class YoutubeUploader():
                 'client_id': self.client_secrets['web'].get('client_id'),
                 'client_secret': self.client_secrets['web'].get('client_secret')}
             oauth_json_str = oauth_template.substitute(subs)
-            print(oauth_json_str)
             with open(self.oauth_path, 'w') as f:
                 f.write(oauth_json_str)
 
@@ -321,5 +320,5 @@ class YoutubeUploader():
         '''
         Tears down and closes the class cleanly.
         '''
-        if os.path.exists(self.oauth_path):
-            os.remove(self.oauth_path)
+        #if os.path.exists(self.oauth_path):
+        #    os.remove(self.oauth_path)
