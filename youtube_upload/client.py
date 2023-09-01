@@ -320,5 +320,5 @@ class YoutubeUploader():
         '''
         Tears down and closes the class cleanly.
         '''
-        #if os.path.exists(self.oauth_path):
-        #    os.remove(self.oauth_path)
+        if os.path.exists(self.oauth_path):
+            os.remove(self.oauth_path)
